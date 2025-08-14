@@ -8,9 +8,11 @@ import { useRouter } from 'vue-router';
 
 const router =useRouter();
 
+const { params } = router.currentRoute.value;
+
 function login(){
-    console.log('logou');
+    console.log(params);
      router.push('/about')  ;
   
 }
-</script>
+</script>   
